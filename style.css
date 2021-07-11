@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Roboto&display=swap');
+
+:root {
+  --headingFont: 'Castoro', serif;
+  --bodyFont: 'Roboto', sans-serif;
+  --saffron: rgb(238, 167, 75);
+  --purple: #40137a;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--bodyFont);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar {
+  width: 100vw;
+  height: 10vh;
+  background: white;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  border-bottom: var(--saffron) solid 5px;
+}
+
+#nav-logo {
+  width: 60%;
+}
+
+#logo {
+  height: 70px;
+}
+
+.nav-link {
+  font-size: 1.2em;
+  color: var(--saffron);
+  margin: 30px;
+  text-decoration: none;
+}
+
+.section {
+  width: 100vw;
+  max-width: 100vw;
+  background: var(--purple);
+}
+
+.section-grid {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-gap: 50px;
+}
+
+.section-title {
+  font-family: var(--headingFont);
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-top: 5%;
+  color: var(--purple);
+}
+
+.section-content {
+  margin: 3% 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-content: center;
+}
+
+.section-right {
+  text-align: center;
+}
+
+.section-highlight {
+  margin-bottom: 20px;
+  margin-left: 0;
+  color: var(--saffron);
+}
+
+.section-text {
+  color: var(--purple);
+  line-height: 1.5;
+}
+
+.section-text p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+ul {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+#hero {
+  display: table;
+  height: 90vh;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ik.imagekit.io/tbwtsimon/hero-bg_6-6vjg2nE.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero-content {
+  height: 100%;
+}
+
+#hero-title {
+  font-family: var(--headingFont);
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 8em;
+  color: white;
+  z-index: 1;
+}
+
+#about {
+  background: white;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('img/about-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; */
+}
+
+#about-illustration {
+  width: 500px;
+}
+
